@@ -1,0 +1,19 @@
+{
+  "name": "portifolio",
+  "version": "1.0.0",
+  "description": "Onde terá minhas informações pessoais, habilidades e projetos feitos",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junio1k/portifolio-.git"
+  },
+  "author": "Celso Junio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/junio1k/portifolio-/issues"
+  },
+  "homepage": "https://github.com/junio1k/portifolio-#readme"
+}
