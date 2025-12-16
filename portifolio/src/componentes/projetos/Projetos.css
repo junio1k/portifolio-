@@ -1,0 +1,25 @@
+.container-projetos{
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.cards-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(7% - 20px)
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

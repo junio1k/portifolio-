@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+.hud-apresentation {
+    padding: 5rem;
+    box-sizing: border-box;
+    position: relative;
+    left: 25%;
+    border-radius: 1rem;
+    font-size: 40px;
+    height: 100%;
+    width: 71rem;
+    color: #E2EBEC;
+}
+
+.letter {
+    font-family: "Holtewood One SC", serif;
+    color: #E2EBEC;
+    transform:scaleX(700px);
+    opacity: 0.9;
+    display: inline-block;
+    transition: ease 0.2s;
+}
+
+.letter:hover {
+    cursor: normal;
+    transform: scale(1.2);
+    color: #4254F0;
+}
+
+.nome {
+    color: #4254F0;
+    font-size: 48px;
+    font-weight: 700px;
+}

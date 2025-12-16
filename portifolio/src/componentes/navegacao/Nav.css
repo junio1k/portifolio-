@@ -1,0 +1,28 @@
+.nav{
+    margin:30px;
+    margin-top:50px;
+    padding: 18px;
+}
+.nav-ul > li{
+    padding: 20px;
+    display: grid;
+    gap: 40px;
+    width: 150px;
+    height: max-content;
+}
+.nav-ul > li:hover{
+    background-color: #1b1f206e;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.281);
+}
+
+a{
+    font-family: 'Holtwood One SC', serif;
+    font-size: small;
+    color: white;
+    text-decoration: none;
+    transition:all 0.4s ease-in-out;
+}
+a:hover{
+    transform: scaleX(1.1);
+    color: #4254F0;
+}

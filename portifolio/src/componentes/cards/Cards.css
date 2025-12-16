@@ -1,0 +1,46 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 350px;
+    padding: 20px;
+    margin: 20px;
+    gap: 1rem;
+    background-color: rgba(36, 36, 36, 0.301);
+    border-radius: 20px;
+    transition: all;
+}
+.cards:hover{
+    transform: scale(1.1);
+}
+.card-title{
+    text-align: center;
+    font-weight: 900;
+    color: #4250F0;
+}
+
+.lari-makeup>img{
+    border-radius:20px;
+    width: 19rem;
+    height: 200px;
+    object-fit: cover;
+    filter: blur(7px);
+    -webkit-filter: blur(7px);
+    transition: animation 0.6s ease;
+    opacity: 0.8;
+}
+.lari-makeup>img:hover{
+    transform: scale(1.01);
+    transition: 0.6s ease;
+    opacity: 1;
+    filter: blur(0.91px);
+    -webkit-filter: blur(0.91px);
+}
+.overlay{
+    margin-top:7px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color:#dddde4c7
+}

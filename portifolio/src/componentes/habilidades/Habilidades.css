@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container-habilidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    justify-content: center;
+
+}
+
+.habilidades {
+    display: grid;
+    padding: 20px;
+    background-color: #000000a1;
+}
+
+.habilidades-span {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+
+.progrecao {
+    background-color: #4253f0dc;
+    padding: 5px;
+    border-radius: 10px;
+
+    width: 0%;
+    animation: fill 15s alternate infinite;
+}
+@keyframes fill {
+    0%{
+        width:0%;
+    }
+    50%{
+        width:100%;
+    }
+    100%{
+        width:1%;
+    }
+    
+}
+
+.habilidades-span>h2 {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Holtwood One SC', Courier, monospace;
+    color: rgb(59, 59, 59);
+}
+
+.habilidades-span>span {
+    font-size: 40px;
+    font-family: "Holtwood One SC", sans-serif;
+    color: rgba(253, 250, 250, 0.89);
+    position: absolute;
+    left: 19.3rem;
+    padding: 20px;
+}
+
+.Java {
+    color: white;
+    padding: 20px;
+}
+.porcentagem{
+    color: white;
+    display: flex;
+    justify-content: end;
+    animation: fill 15s alternate infinite
+}
