@@ -5,7 +5,7 @@ import './apresentacao.css';
 
 const Apresentacao = () => {
 
-    const text = "Estou começando minha carreira como desenvolvedor web e dar vida a projetos únicos. Fique avontade para e explorar   meu portfólio!"
+    const text = "Estou começando minha carreira como desenvolvedor web e dar vida a projetos únicos. Fique avontade para e explorar meu portfólio!"
 
     /*const apresentation = document.querySelector('.apresentation');
     const htmlElements = document.createElement('h1');

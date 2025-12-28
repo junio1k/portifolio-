@@ -2,14 +2,11 @@
 
 
 .hud-apresentation {
-    padding: 5rem;
-    box-sizing: border-box;
-    position: relative;
-    left: 25%;
-    border-radius: 1rem;
-    font-size: 40px;
-    height: 100%;
-    width: 71rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20rem;
+    font-size: 45px;
     color: #E2EBEC;
 }
 
@@ -32,4 +29,5 @@
     color: #4254F0;
     font-size: 48px;
     font-weight: 700px;
+    margin-left:10px;
 }
