@@ -1,0 +1,56 @@
+.container{
+    height:100%;
+    width:100%;
+
+    padding: 20px;
+    display:grid;
+    grid-template-columns: 1fr;
+    position:relative;
+}
+
+.porcentagem-html{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: rgb(248, 248, 248);
+    height:100px;
+    width:3px;
+    margin-bottom:-20rem;
+    position:relative;
+    left:50%;
+}
+
+.curso1-html{
+    display: flex;
+    position:relative;
+    top:0rem;
+    right:-0.9rem;
+    padding:0;
+    border:1px solid transparent;
+    inline-size:500px;
+}
+.curso1-html a{
+    text-decoration:none;
+    color:white;
+    font-family:"Holtwood One SC", serif;
+    font-size:12px;
+    margin-left:20px;
+}
+
+.curso2-html {
+    display: flex;
+    justify-content:end;
+    position:relative;
+    top:5.9rem;
+    left:3.5rem;
+    font-family:"Holtwood One SC",serif;
+    font-size:16px;
+}
+
+.curso2-html a {
+    color: white;
+    text-decoration: none;;
+    margin-right: 1rem;
+    position:relative;
+    bottom:5rem;
+}

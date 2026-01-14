@@ -6,6 +6,7 @@ import Apresentacao from './componentes/apresentacao';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Habilidades from './componentes/habilidades';
+import Footer from './componentes/footer';
 
 function App() {
   /* /*   gsap.registerPlugin(ScrollTrigger);
@@ -30,6 +31,7 @@ function App() {
       <Apresentacao />
       < Projetos />
       < Habilidades />
+      < Footer />
     </div>
   );
 }

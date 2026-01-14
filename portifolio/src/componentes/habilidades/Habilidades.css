@@ -69,11 +69,12 @@
     }
 }
 .conhecimento{
-    height: auto;
+    display:grid;
+    grid-template-columns: 2fr ;
     margin-top:70px;
     padding:20px;
     border-radius:20px;
-    background-color:#0f0f0f;
+    background-color:#111111;
 
 }
 .conhecimento > h3{
@@ -97,46 +98,51 @@
         background-position:200%;
     }
 }
-.conhecimento-span {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 20px;
-}
 
 .progrecao {
     background-color: #4253f0dc;
     padding: 5px;
     border-radius: 10px;
 }
+.javascript{
+    display:grid;
+    width: 100%;
+    padding:20px;
+    box-sizing:border-box;
+    font-family:"Holtwood One SC", serif;
+}
 .porcentagem{
-    display: flex;
-    justify-content: end;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: white;
+    height: 400px;
+    width: 3px;
+    margin-bottom:-20rem;
     position:relative;
     left:50%;
-    background-color: white;
-    width: 5px;
-    border-radius:2px;
-    justify-content:center;
-    align-items: center;
-    height:30px;
-    margin-top:3px;
 }
-.javascript > span{
-    height: 7rem;
-  }
-.curso1{
-    color: white;
+
+.curso{
     margin:0px;
+    display:inline-block;
+    position:relative;
+    bottom:20rem;
+}
+.curso1{
+    margin:10px;
     display: flex;
     position:relative;
-    bottom:100px;
+    bottom:6rem;
+    right:2.8rem;
+    padding:20px;
 }
 .curso1 a{
     text-decoration:none;
     color:white;
     font-family:"Holtwood One SC", serif;
     font-size:12px;
-    margin-left:2rem;
+    margin-left:20px;
 }
 
 .curso a:hover{
@@ -145,7 +151,7 @@
 }
 .curso1-span{
     background-color: white;
-    width: 50px;
+    width: 49px;
     height: 0.1rem;
     display: inline-block;
     position: relative;
@@ -153,17 +159,97 @@
     left:6px;
     border-radius:3px
 }
-.curso2{
-    color: white;
-    margin:0px;
-    display: inline-block;
+.curso2 {
+    display: flex;
+    justify-content:end;
     position:relative;
-    left:11.2rem;
-    bottom:80px;
-    text-decoration: none;
-    font-family: "Holtwood One SC",serif;
-    font-size:12px;
-    
+    top:-1rem;
+    padding:10px;
+    margin-right:3px;
+    font-family:"Holtwood One SC",serif;
+    font-size:16px;
+}
+
+.curso2 a {
+    color: white;
+    text-decoration: none;;
+    margin-right: 1rem;
+    position:relative;
+    bottom:5rem;
+}
+.curso2-span{
+    background-color: white;
+    width: 50px;
+    height: 0.1rem;
+    display: inline-block;
+    position: relative;
+    bottom:4rem;
+    left:-10px;
+    border-radius:3px
+}
+.curso3{
+    display: flex;
+    justify-content: start;
+    padding:20px;
+    position:relative;
+    bottom:-.51rem;
+    right:2.7rem;
+    font-family:"Holtwood One SC",serif;
+    font-size:16px;
+}
+.curso3-span{
+    background-color: white;
+    width: 50px;
+    height: 0.1rem;
+    display:flex;
+    align-items:end;
+    justify-content:end;
+    position:relative;
+    bottom:4rem;
+    left:30.7rem;
+    border-radius:3px
+}
+.curso3 a {
+    color: white;
+    text-decoration:none;
+    position:relative;
+    right:0.5rem;
+    bottom:5rem;
+    font-size:15px;
+}
+.curso4{
+    display: flex;
+    position:relative;
+    left:4.1rem;
+    bottom:-1rem;
+    justify-content:end;
+    padding:20px;
+    font-family:"Holtwood One SC",serif;
+    font-size:16px;
+}
+.curso4 a {
+    color: white;
+    text-decoration: none;;
+    margin-right: 1rem;
+    position:relative;
+    bottom:5rem;
+}
+.curso5{
+    display:flex;
+    justify-content:start;
+    padding:20px;
+    position:relative;
+    bottom:-2rem;
+    left:3.1rem;
+    font-family:"Holtwood One SC",serif;
+    font-size:16px;
+} 
+.curso5 a{
+    color: white;
+    text-decoration: none;;
+    margin-right: 1rem;
+    position:relative;
+    bottom:5rem;
 }
 .Java {
     font-size:14px;

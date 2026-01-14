@@ -2,11 +2,13 @@
 
 
 .hud-apresentation {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    padding:20rem;
+    position:relative;
+    left:25%;
+    text-align:center;  
+    padding:20px;
+    margin-bottom:10rem;
     font-size: 45px;
+    inline-size: 1000px;
     color: #E2EBEC;
 }
 
