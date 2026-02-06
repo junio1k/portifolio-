@@ -10,6 +10,8 @@
     font-size: 45px;
     inline-size: 1000px;
     color: #E2EBEC;
+    transform:translateX(-700px);
+    opacity:0;
 }
 
 .letter {

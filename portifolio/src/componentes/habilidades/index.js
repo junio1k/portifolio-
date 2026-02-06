@@ -3,9 +3,85 @@ import { FaFileDownload } from "react-icons/fa"
 import { FaFile } from "react-icons/fa";
 import "./Habilidades.css"
 import Hipertext from "../hipertext";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { useLayoutEffect, useRef } from "react";
 
 
 const Habilidades = () => {
+
+    const el = useRef();
+    const tl = useRef();
+
+    useLayoutEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const ctx = gsap.context(() => {
+            tl.current = gsap.timeline({
+                scrollTrigger: {
+                    trigger:".curso",
+                    scrub:true,
+                    //markers:true,
+                    start:'top 600px',
+                    end: 'bottom 250px',
+                }
+            }).fromTo('.conhecimento',{
+                opacity:0,
+                x:260,
+            },{
+                opacity:1,
+                x:0,
+            })
+            .fromTo('.curso1', {
+                opacity:0,
+                x: -260,
+            }, {
+                opacity:1,
+                x:0,
+            })
+            .fromTo('.curso2', {
+                opacity:0,
+                x: 260,
+            }, {
+                opacity:1,
+                x:0,
+            })
+            .fromTo('.curso3', {
+                opacity:0,
+                x: -260,
+            }, {
+                opacity:1,
+                x:0,
+            })
+            .fromTo('.curso4', {
+                opacity:0,
+                x: 260,
+            }, {
+                opacity:1,
+                x:0,
+            })
+            .fromTo('.curso5', {
+                opacity:0,
+                x: -260,
+            }, {
+                opacity:1,
+                x:0,
+            })
+        }, el)
+
+        return () => {
+            gsap.killTweensOf(".conhecimento")
+        }
+    }, [])
+
+    useLayoutEffect(() => {
+        gsap.to('.html', {
+            
+        })
+        return () => {
+            gsap.killTweensOf('.html');
+        }
+    })
     return (
         <div className="container-habilidades">
             <section className="resumo">
@@ -22,14 +98,14 @@ const Habilidades = () => {
             </section>
             <div className="conhecimento">
                         <h3>Conhecimento</h3>
-                <div class="javascript">
+                <div class="cursos javascript" ref={el}>
                         <span className="Java">
                             <p>JavaScript</p>
                         </span>
                         <div className="progrecao"></div>
                         <span className="porcentagem">
                         </span>
-                            <div className="curso curso1 curso1-savascript">
+                            <div className="curso curso1 ">
                                 <a href="https://cursos.alura.com.br/certificate/05c85457-d5bc-4741-b8df-94ec0769fb3b?lang=pt_BR" target="_blank">JavaScript com Node.js: criando sua primeira biblioteca </a>
                             <span className="curso1-span"></span>
                             </div>
@@ -50,8 +126,9 @@ const Habilidades = () => {
                                 <span className="curso2-span"></span>
                             </div>
                     </div>
-                    <div class="html">
-                        <Hipertext />
+                    <div class="cursos html">
+                        <Hipertext 
+                        />
                     </div>
             </div>
         </div>

@@ -1,11 +1,33 @@
-
-import { Card } from '@heroui/card';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useLayoutEffect } from 'react';
 import { FaGithub } from 'react-icons/fa';
 import './Projetos.css';
 import Cards from '../cards';
 
 
 const Projetos = (props) => {
+
+    useLayoutEffect(()=> {
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".cards-container", {
+            x:30,
+            opacity:1,
+            filter:"blur(0px)",
+            scrollTrigger:{
+                trigger:".container-projetos",
+                //markers:true,
+                start:"top 500px",
+                end:"bottom 600px",
+                scrub:true,
+            }
+        })
+        //Boa prática: para não perder performance ao recarregar a página, vamos usar o gsap.killTweensOf("Aqui passamos a classe do item")
+
+        return () => {
+            gsap.killTweensOf(".container-projetos");
+        }
+    }, [])
     const names = {
         name1: "Lari Make Up",
         description1: "Um site voltado para agendamento e divulgação de serviços de maquiagem.",

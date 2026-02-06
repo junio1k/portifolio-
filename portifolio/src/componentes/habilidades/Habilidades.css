@@ -10,9 +10,8 @@
     background-color: #0a0a0a;
     box-shadow: 10px -12px 20px 15px rgba(0, 0, 0, 0.555);
     width: 100%;
+    
 }
-
-.resumo {}
 
 .resumo>h2 {
     text-align: center;
@@ -75,6 +74,7 @@
     padding:20px;
     border-radius:20px;
     background-color:#111111;
+   
 
 }
 .conhecimento > h3{
