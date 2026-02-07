@@ -17,8 +17,5 @@
   "bugs": {
     "url": "https://github.com/junio1k/portifolio-/issues"
   },
-  "homepage": "https://junio1k.github.io/portifolio-",
-  "dependencies": {
-    "gh-pages": "^6.3.0"
-  }
+  "homepage": "https://junio1k.github.io/portifolio-"
 }
